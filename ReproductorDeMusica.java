@@ -12,6 +12,14 @@ public class ReproductorDeMusica {
         "The Good Life",
     };
     private int indice = 1;
+
+    public String[] getListaDeMusica() {
+        return this.listaDeMusica;
+    }
+
+    public void setListDeMusica(String[] listaDeMusica) {
+        this.listaDeMusica = listaDeMusica;
+    }
     
     public void siguienteCancion() {
         System.out.println("Siguiente canción: " + listaDeMusica[++indice]);
