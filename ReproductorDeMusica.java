@@ -11,7 +11,12 @@ public class ReproductorDeMusica {
         "Break",
         "The Good Life",
     };
-    private int indice = 1;
+    private int indice = 0;
+
+    public ReproductorDeMusica(String[] listaDeMusica, int indice) {
+        this.listaDeMusica = listaDeMusica;
+        this.indice = indice;
+    }
 
     public String[] getListaDeMusica() {
         return this.listaDeMusica;
