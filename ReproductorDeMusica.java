@@ -1,45 +1,36 @@
 public class ReproductorDeMusica {
-    private String[] listaDeMusica = new String[] {
-        "I Hate Everything About You",
-        "Just Like You",
-        "Home",
-        "Wake Up",
-        "Animal I Have Become",
-        "Pain",
-        "Never Too Late",
-        "Riot",
-        "Break",
-        "The Good Life",
-    };
+    private ListaDeReproducion listaDeMusica;
     private int indice = 0;
 
-    public ReproductorDeMusica(String[] listaDeMusica, int indice) {
+    // public ReproductorDeMusica() {}
+
+    public ReproductorDeMusica(ListaDeReproducion listaDeMusica, int indice) {
         this.listaDeMusica = listaDeMusica;
         this.indice = indice;
     }
 
-    public String[] getListaDeMusica() {
+    public ListaDeReproducion getListaDeMusica() {
         return this.listaDeMusica;
     }
 
-    public void setListDeMusica(String[] listaDeMusica) {
+    public void setListDeMusica(ListaDeReproducion listaDeMusica) {
         this.listaDeMusica = listaDeMusica;
     }
     
     public void siguienteCancion() {
-        System.out.println("Siguiente canción: " + listaDeMusica[++indice]);
+        System.out.printf("Siguiente canción: \n\t%s\n\n", listaDeMusica.getCancionSeleccionada(++indice));
     }
 
     public void anteriorCancion() {
-        System.out.println("Anterior canción: " + listaDeMusica[--indice]);
+        System.out.printf("Anterior canción: \n\t%s\n\n", listaDeMusica.getCancionSeleccionada(--indice));
     }
 
     public void cancionAleatoria(int indiceRandom) {
-        System.out.println("Canción aleatoria: " + listaDeMusica[indiceRandom]);
+        System.out.printf("Canción aleatoria: \n\t%s\n\n", listaDeMusica.getCancionSeleccionada(indiceRandom));
         indice = indiceRandom;
     }
 
     public void repetirCancion() {
-        System.out.println("Repetir canción: " + listaDeMusica[indice]);
+        System.out.printf("Repetir canción: \n\t%s\n\n", listaDeMusica.getCancionSeleccionada(indice));
     }
 }
