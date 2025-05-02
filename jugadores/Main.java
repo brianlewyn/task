@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Jugador[] avatares = new Jugador[] {
+        Avatar[] avatares = new Avatar[] {
             new Angel("Ariel"),
             new Gigante("Goliat"),
             new Elfo("Luthien"),
@@ -8,8 +8,8 @@ public class Main {
             new Humano("Leónidas"),
         };
 
-        for (Jugador jugador : avatares) {
-            jugador.usarPoderEspecial();
+        for (Avatar Avatar : avatares) {
+            Avatar.usarPoderEspecial();
         }
     }
 }

@@ -1,10 +1,10 @@
-public abstract class Jugador {
+public abstract class Avatar {
     protected String nombre;
     protected int salud;
     protected int experiencia;
     protected int nivel;
 
-    public Jugador(String nombre) {
+    public Avatar(String nombre) {
         this.nombre = nombre;
         this.salud = 100;
         this.experiencia = 0;

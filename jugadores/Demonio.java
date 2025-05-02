@@ -1,4 +1,4 @@
-public class Demonio extends Jugador {
+public class Demonio extends Avatar {
     public Demonio(String nombre) {
         super(nombre);
     }
